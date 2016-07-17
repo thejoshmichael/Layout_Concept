@@ -50,7 +50,7 @@ img {
     width: 100%; }
 
   .small-box {
-    float: left;
+    float: left !important;
     clear: none !important; }
 
   .xs-box img {
@@ -60,4 +60,7 @@ img {
     float: left !important; }
 
   .medium-box {
+    width: 100% !important; } }
+@media only screen and (max-width: 460px) {
+  .small-box, .xs-box {
     width: 100% !important; } }

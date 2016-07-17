@@ -1,10 +1,12 @@
+@import "bourbon"
+
 body
   padding: 0
   margin: 0
-  font-family: sans-serif
 
 *
   box-sizing: 0
+  +transition
 
 h1, p
   margin: 0
@@ -18,7 +20,6 @@ h1, p
 .work
   width: 80%
   max-width: 1000px
-  // background: red
   margin-bottom: 100px
   position: absolute
   top: 80%
@@ -28,13 +29,13 @@ h1, p
   .large-box
     width: 100%
 
-  .small-box
-    width: 50%
-    clear: both
-
   .medium-box
     width: 65%
     float: left
+
+  .small-box
+    width: 50%
+    clear: both
 
   .xs-box
     width: 50%
@@ -49,3 +50,22 @@ img
   width: 100%
   max-width: 100%
   display: block
+
+
+@media only screen and (max-width: 760px)
+  .work
+    width: 100%
+    
+  .small-box
+    float: left
+    clear: none !important
+
+  .xs-box
+    img
+      width: 100% !important
+
+  .is-right
+    float: left !important
+
+  .medium-box
+    width: 100% !important

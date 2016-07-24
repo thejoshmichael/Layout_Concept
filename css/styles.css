@@ -3,7 +3,7 @@ body {
   margin: 0; }
 
 * {
-  box-sizing: 0;
+  box-sizing: border-box;
   -webkit-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s; }
 
@@ -67,7 +67,8 @@ img {
 .about {
   width: 100%;
   height: 80vh;
-  background-color: #F2F0F1; }
+  background-color: #F2F0F1;
+  position: relative; }
 
 .about-me {
   width: 80%;
@@ -93,10 +94,28 @@ img {
   .about-me span {
     color: #aaa; }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
+  .about-me img {
+    width: 350px; } }
+@media only screen and (max-width: 460px) {
+  .about {
+    background: #bbb; }
+
   .about-me {
     width: 100%;
-    padding: 0 15px; }
+    padding: 0 15px;
+    margin-top: 30%; }
+    .about-me img {
+      width: 250px; }
     .about-me p {
-      width: 100%;
-      color: white; } }
+      width: 85%;
+      color: white;
+      top: -25%;
+      font-size: 26px; }
+    .about-me span {
+      color: #8a8a8a; } }
+@media only screen and (max-width: 400px) {
+  .about-me p {
+    font-size: 22px; }
+  .about-me img {
+    width: 200px; } }

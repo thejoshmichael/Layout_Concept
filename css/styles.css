@@ -1,6 +1,7 @@
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: sans-serif; }
 
 * {
   box-sizing: border-box;
@@ -64,58 +65,89 @@ img {
 @media only screen and (max-width: 460px) {
   .small-box, .xs-box {
     width: 100% !important; } }
+header {
+  width: 100%;
+  height: 50px;
+  background: #F2F0F1; }
+
 .about {
   width: 100%;
-  height: 80vh;
-  background-color: #F2F0F1;
-  position: relative; }
+  background: #F2F0F1; }
+  .about .about-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    height: 400px;
+    margin-bottom: 200px; }
+    .about .about-container p {
+      width: 70%;
+      color: black;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: -1px;
+      line-height: 1.2;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      z-index: 2; }
+    .about .about-container span {
+      color: #aaa; }
+    .about .about-container .about-img {
+      width: 40%;
+      min-width: 300px;
+      position: absolute;
+      right: 15px; }
+      .about .about-container .about-img img {
+        width: 100%;
+        max-width: 100%; }
 
-.about-me {
-  width: 80%;
-  max-width: 1000px;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); }
-  .about-me img {
-    width: 450px;
-    float: right; }
-  .about-me p {
-    font-family: sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: -1px;
-    line-height: 1.2;
-    display: block;
-    width: 65%;
-    position: absolute;
-    top: 15%; }
-  .about-me span {
-    color: #aaa; }
+.profile {
+  width: 100%;
+  overflow: auto; }
+  .profile .profile-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto; }
+    .profile .profile-container .profile-inner {
+      width: 60%;
+      float: right; }
 
 @media only screen and (max-width: 768px) {
-  .about-me img {
-    width: 350px; } }
-@media only screen and (max-width: 460px) {
-  .about {
-    background: #bbb; }
-
-  .about-me {
+  .about .about-container {
     width: 100%;
     padding: 0 15px;
-    margin-top: 30%; }
-    .about-me img {
-      width: 250px; }
-    .about-me p {
-      width: 85%;
-      color: white;
-      top: -25%;
+    margin-bottom: 100px; }
+    .about .about-container p {
       font-size: 26px; }
-    .about-me span {
+
+  .profile .profile-container {
+    width: 100%;
+    padding: 0 15px; }
+    .profile .profile-container .profile-inner {
+      width: 100%; } }
+@media only screen and (max-width: 640px) {
+  header {
+    background: #bbb; }
+
+  .about {
+    background: #bbb; }
+    .about .about-container p {
+      color: white; }
+    .about .about-container span {
       color: #8a8a8a; } }
-@media only screen and (max-width: 400px) {
-  .about-me p {
-    font-size: 22px; }
-  .about-me img {
-    width: 200px; } }
+@media only screen and (max-width: 460px) {
+  .about-container .about-img {
+    min-width: 230px !important;
+    top: 30%; }
+  .about-container p {
+    font-size: 22px !important; } }
+@media only screen and (max-width: 320px) {
+  .about .about-container {
+    height: 350px; }
+    .about .about-container p {
+      font-size: 20px; }
+    .about .about-container .about-img {
+      min-width: 180px !important;
+      top: 40%; } }

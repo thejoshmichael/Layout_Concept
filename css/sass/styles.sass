@@ -73,3 +73,46 @@ img
 @media only screen and (max-width: 460px)
   .small-box, .xs-box
     width: 100% !important
+
+
+// Styles for About Page Start Here
+.about
+  width: 100%
+  height: 80vh
+  background-color: #F2F0F1
+
+.about-me
+  width: 80%
+  max-width: 1000px
+  position: absolute
+  top: 15%
+  left: 50%
+  transform: translateX(-50%)
+  // background: red
+
+  img
+    width: 450px
+    float: right
+
+  p
+    font:
+      family: sans-serif
+      size: 30px
+      weight: bold
+    letter-spacing: -1px
+    line-height: 1.2
+    display: block
+    width: 65%
+    position: absolute
+    top: 15%
+
+  span
+    color: #aaa
+
+@media only screen and (max-width: 760px)
+  .about-me
+    width: 100%
+    padding: 0 15px
+    p
+      width: 100%
+      color: white

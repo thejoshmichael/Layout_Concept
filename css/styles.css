@@ -147,7 +147,7 @@ header {
   .about .about-container {
     height: 350px; }
     .about .about-container p {
-      font-size: 20px; }
+      font-size: 20px !important; }
     .about .about-container .about-img {
       min-width: 180px !important;
       top: 40%; } }

@@ -117,26 +117,26 @@ header {
 
 @media only screen and (max-width: 768px) {
   .about .about-container {
-    width: 90%;
-    margin-bottom: 100px; }
+    width: 90% !important;
+    margin-bottom: 100px !important; }
     .about .about-container p {
-      font-size: 26px; } }
+      font-size: 26px !important; } }
 @media only screen and (max-width: 460px) {
   .about-container {
     height: auto !important;
-    overflow: auto;
+    overflow: auto !important;
     margin-bottom: 50px !important; }
     .about-container .about-img {
       min-width: 100% !important;
       position: static !important;
-      margin: 40px 0; }
+      margin: 40px 0 !important; }
     .about-container p {
       width: auto !important;
       font-size: 22px !important;
       -webkit-transform: translateY(0) !important;
               transform: translateY(0) !important;
       position: static !important;
-      margin-top: 20px; }
+      margin-top: 20px !important; }
 
   .profile-container {
     width: 90% !important; }

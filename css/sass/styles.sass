@@ -123,13 +123,13 @@ header
 
 .profile
   width: 100%
-  // background: red
   overflow: auto
 
   .profile-container
     width: 80%
     max-width: 1000px
     margin: 0 auto
+    overflow: auto
 
     .profile-inner
       width: 60%
@@ -139,45 +139,35 @@ header
 @media only screen and (max-width: 768px)
   .about
     .about-container
-      width: 100%
-      padding: 0 15px
+      width: 90%
       margin-bottom: 100px
       p
         font-size: 26px
 
-  .profile
-    .profile-container
-      width: 100%
-      padding: 0 15px
-
-      .profile-inner
-        width: 100%
-
-@media only screen and (max-width: 640px)
-  header
-    background: #bbb
-  .about
-    background: #bbb
-    .about-container
-      p
-        color: white
-      span
-        color: #8a8a8a
-
 @media only screen and (max-width: 460px)
   .about-container
+    height: auto !important
+    overflow: auto
+    margin-bottom: 50px !important
+
     .about-img
-      min-width: 230px !important
-      top: 30%
+      min-width: 100% !important
+      position: static !important
+      margin: 40px 0
     p
+      width: auto !important
       font-size: 22px !important
+      transform: translateY(0) !important
+      position: static !important
+      margin-top: 20px
+
+  .profile-container
+    width: 90% !important
+    .profile-inner
+      width: 100% !important
 
 @media only screen and (max-width: 320px)
   .about
     .about-container
-      height: 350px
       p
         font-size: 20px !important
-      .about-img
-        min-width: 180px !important
-        top: 40%
